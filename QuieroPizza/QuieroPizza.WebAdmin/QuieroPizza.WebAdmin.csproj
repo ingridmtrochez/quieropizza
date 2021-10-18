@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{53D67AFC-679C-476C-A6D0-F9A13433A322}</ProjectGuid>
+    <ProjectGuid>{53EC85A2-5052-4EB1-8615-283DFD9AAB1D}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QuieroPizza.Web</RootNamespace>
-    <AssemblyName>QuieroPizza.Web</AssemblyName>
+    <RootNamespace>QuieroPizza.WebAdmin</RootNamespace>
+    <AssemblyName>QuieroPizza.WebAdmin</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -131,12 +131,10 @@
     <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\Productos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -168,7 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuieroPizza.BL\QuieroPizza.BL.csproj">
-      <Project>{f58593aa-bc37-4890-989c-0ed53e749a4a}</Project>
+      <Project>{F58593AA-BC37-4890-989C-0ED53E749A4A}</Project>
       <Name>QuieroPizza.BL</Name>
     </ProjectReference>
   </ItemGroup>
@@ -185,9 +183,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50824</DevelopmentServerPort>
+          <DevelopmentServerPort>54411</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50824/</IISUrl>
+          <IISUrl>http://localhost:54411/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
