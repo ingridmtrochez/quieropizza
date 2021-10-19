@@ -9,20 +9,20 @@ namespace InfinityStore.BL
     public class CategoriaBL
     {
         Contexto _contexto;
-        public List<Categoria> ListadeCategoria { get; set; }
+        public List<Categoria> ListadeCategorias { get; set; }
 
         public CategoriaBL()
         {
             _contexto = new Contexto();
 
-            ListadeCategoria = new List<Categoria>();
+            ListadeCategorias = new List<Categoria>();
         }
 
         public List<Categoria> ObtenerCategorias()
         {
 
-            ListadeCategoria=_contexto.Categorias.ToList();
-            return ListadeCategoria;
+            ListadeCategorias=_contexto.Categorias.ToList();
+            return ListadeCategorias;
         }
 
         public void GuardarCategoria(Categoria categoria)
