@@ -28,7 +28,7 @@ namespace InfinityStore.WebAdmin.Controllers
         public ActionResult Crear()
         {
             var nuevaOrden = new Orden();
-            var clientes = _clientesBL.ObtenerClientes();
+            var clientes = _clientesBL.ObtenerClientesActivos();
 
             ViewBag.ClienteId = new SelectList(clientes, "Id", "Nombre"); //para cargar la lista de clientes
             return View(nuevaOrden);
