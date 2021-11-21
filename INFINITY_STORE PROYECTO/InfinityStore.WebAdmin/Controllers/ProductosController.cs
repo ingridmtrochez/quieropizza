@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace InfinityStore.WebAdmin.Content
 {
+    [Authorize]
     public class ProductosController : Controller
     {
         ProductosBL _productosBL;

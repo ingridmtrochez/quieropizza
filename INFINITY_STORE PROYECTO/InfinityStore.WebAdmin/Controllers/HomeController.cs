@@ -6,18 +6,13 @@ using System.Web.Mvc;
 
 namespace InfinityStore.WebAdmin.Controllers
 {
-    public class LoginController : Controller
+    [Authorize]
+    public class HomeController : Controller
     {
-        // GET: Login
+        // GET: Home
         public ActionResult Index()
         {
             return View();
-        }
-
-        [HttpPost]
-        public ActionResult Index(FormCollection data)
-        {
-            return RedirectToAction("Index", "Home");
         }
     }
 }

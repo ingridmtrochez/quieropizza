@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace InfinityStore.WebAdmin.Controllers
 {
+    [Authorize]
     public class OrdenDetalleController : Controller
     {
         OrdenesBL _ordenBL;
